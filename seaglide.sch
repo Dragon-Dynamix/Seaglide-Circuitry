@@ -33,14 +33,14 @@ LIBS:adafruit
 LIBS:seaglide-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr User 6299 5512
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "SeaDragon main electrical control unit schematic"
+Date "2018-1-11"
+Rev "1.1"
+Comp "Dragon Dynamix"
+Comment1 "Louie Fozard"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -48,215 +48,237 @@ $EndDescr
 $Comp
 L LED_RAGB D1
 U 1 1 5A577C1D
-P 3650 3650
-F 0 "D1" H 3650 4020 50  0000 C CNN
-F 1 "LED_RAGB" H 3650 3300 50  0000 C CNN
-F 2 "" H 3650 3600 50  0001 C CNN
-F 3 "" H 3650 3600 50  0001 C CNN
-	1    3650 3650
+P 2600 2600
+F 0 "D1" H 2600 2970 50  0000 C CNN
+F 1 "LED_RAGB" H 2600 2250 50  0000 C CNN
+F 2 "" H 2600 2550 50  0001 C CNN
+F 3 "" H 2600 2550 50  0001 C CNN
+	1    2600 2600
 	-1   0    0    1   
 $EndComp
 $Comp
 L ArduinoProMini AU1
 U 1 1 5A579D91
-P 5250 3050
-F 0 "AU1" H 5300 3050 60  0000 C CNN
-F 1 "ArduinoProMini" H 5250 2150 60  0000 C CNN
-F 2 "" H 5250 3050 60  0001 C CNN
-F 3 "" H 5250 3050 60  0001 C CNN
-	1    5250 3050
+P 4200 2000
+F 0 "AU1" H 4250 2000 60  0000 C CNN
+F 1 "ArduinoProMini" H 4200 1100 60  0000 C CNN
+F 2 "" H 4200 2000 60  0001 C CNN
+F 3 "" H 4200 2000 60  0001 C CNN
+	1    4200 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L TSOP382xx U1
 U 1 1 5A579E27
-P 3700 2800
-F 0 "U1" H 3300 3100 50  0000 L CNN
-F 1 "TSOP382xx" H 3300 2500 50  0000 L CNN
-F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" H 3650 2425 50  0001 C CNN
-F 3 "" H 4350 3100 50  0001 C CNN
-	1    3700 2800
+P 2650 1750
+F 0 "U1" H 2250 2050 50  0000 L CNN
+F 1 "TSOP382xx" H 2250 1450 50  0000 L CNN
+F 2 "Opto-Devices:IRReceiver_Vishay_MINICAST-3pin" H 2600 1375 50  0001 C CNN
+F 3 "" H 3300 2050 50  0001 C CNN
+	1    2650 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Conn_01x03 ENGINE
 U 1 1 5A579E74
-P 2350 2700
-F 0 "ENGINE" H 2350 2900 50  0000 C CNN
-F 1 "Conn_01x03" H 2350 2500 50  0001 C CNN
-F 2 "" H 2350 2700 50  0001 C CNN
-F 3 "" H 2350 2700 50  0001 C CNN
-	1    2350 2700
+P 800 1450
+F 0 "ENGINE" H 800 1650 50  0000 C CNN
+F 1 "Conn_01x03" H 800 1250 50  0001 C CNN
+F 2 "" H 800 1450 50  0001 C CNN
+F 3 "" H 800 1450 50  0001 C CNN
+	1    800  1450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Conn_01x03 RUDDER
 U 1 1 5A579F9D
-P 2350 3150
-F 0 "RUDDER" H 2350 3350 50  0000 C CNN
-F 1 "Conn_01x03" H 2350 2950 50  0001 C CNN
-F 2 "" H 2350 3150 50  0001 C CNN
-F 3 "" H 2350 3150 50  0001 C CNN
-	1    2350 3150
+P 800 2000
+F 0 "RUDDER" H 800 2200 50  0000 C CNN
+F 1 "Conn_01x03" H 800 1800 50  0001 C CNN
+F 2 "" H 800 2000 50  0001 C CNN
+F 3 "" H 800 2000 50  0001 C CNN
+	1    800  2000
 	-1   0    0    1   
 $EndComp
 $Comp
 L Conn_01x03 PRESSURE
 U 1 1 5A579FE6
-P 2350 3600
-F 0 "PRESSURE" H 2350 3800 50  0000 C CNN
-F 1 "Conn_01x03" H 2350 3400 50  0001 C CNN
-F 2 "" H 2350 3600 50  0001 C CNN
-F 3 "" H 2350 3600 50  0001 C CNN
-	1    2350 3600
+P 800 2550
+F 0 "PRESSURE" H 800 2750 50  0000 C CNN
+F 1 "Conn_01x03" H 800 2350 50  0001 C CNN
+F 2 "" H 800 2550 50  0001 C CNN
+F 3 "" H 800 2550 50  0001 C CNN
+	1    800  2550
 	-1   0    0    1   
 $EndComp
 $Comp
 L +BATT #BAT+
 U 1 1 5A57B232
-P 6050 2150
-F 0 "#BAT+" H 6050 2000 50  0001 C CNN
-F 1 "+BATT" H 6050 2290 50  0000 C CNN
-F 2 "" H 6050 2150 50  0001 C CNN
-F 3 "" H 6050 2150 50  0001 C CNN
-	1    6050 2150
+P 5000 1100
+F 0 "#BAT+" H 5000 950 50  0001 C CNN
+F 1 "+BATT" H 5000 1240 50  0000 C CNN
+F 2 "" H 5000 1100 50  0001 C CNN
+F 3 "" H 5000 1100 50  0001 C CNN
+	1    5000 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L -BATT #BAT-
 U 1 1 5A57B29A
-P 6450 2350
-F 0 "#BAT-" H 6450 2200 50  0001 C CNN
-F 1 "-BATT" H 6450 2490 50  0000 C CNN
-F 2 "" H 6450 2350 50  0001 C CNN
-F 3 "" H 6450 2350 50  0001 C CNN
-	1    6450 2350
+P 5400 1300
+F 0 "#BAT-" H 5400 1150 50  0001 C CNN
+F 1 "-BATT" H 5400 1440 50  0000 C CNN
+F 2 "" H 5400 1300 50  0001 C CNN
+F 3 "" H 5400 1300 50  0001 C CNN
+	1    5400 1300
 	0    1    1    0   
 $EndComp
-Text GLabel 6250 2200 1    60   Input ~ 0
+Text GLabel 5200 1150 1    60   Input ~ 0
 RAW
-Text GLabel 6400 2200 1    60   Input ~ 0
+Text GLabel 5350 1150 1    60   Input ~ 0
 GND
-Text GLabel 2550 2700 2    60   Input ~ 0
+Text GLabel 1000 1450 2    60   Input ~ 0
 RAW
-Text GLabel 2550 2800 2    60   Input ~ 0
+Text GLabel 1000 1550 2    60   Input ~ 0
 GND
-Text GLabel 2550 2600 2    60   Input ~ 0
+Text GLabel 1000 1350 2    60   Input ~ 0
 E_DATA
-Wire Wire Line
-	6050 2150 6050 2200
-Wire Wire Line
-	6050 2200 6250 2200
-Wire Wire Line
-	6400 2200 6400 2350
-Wire Wire Line
-	6050 2350 6450 2350
-Connection ~ 6400 2350
-Text GLabel 2550 3150 2    60   Input ~ 0
+Text GLabel 1000 1900 2    60   Input ~ 0
 5V
-Text GLabel 2550 3250 2    60   Input ~ 0
+Text GLabel 1000 2100 2    60   Input ~ 0
 GND
-Text GLabel 2550 3050 2    60   Input ~ 0
+Text GLabel 1000 2000 2    60   Input ~ 0
 R_DATA
-Text GLabel 2550 3500 2    60   Input ~ 0
+Text GLabel 1000 2450 2    60   Input ~ 0
 P_DATA
-Text GLabel 2550 3600 2    60   Input ~ 0
+Text GLabel 1000 2550 2    60   Input ~ 0
 5V
-Text GLabel 2550 3700 2    60   Input ~ 0
+Text GLabel 1000 2650 2    60   Input ~ 0
 GND
-Text GLabel 6050 2650 2    60   Input ~ 0
+Text GLabel 5000 1600 2    60   Input ~ 0
 5V
-Text GLabel 3450 3650 0    60   Input ~ 0
+Text GLabel 2400 2600 0    60   Input ~ 0
 RGB_BASE
-Text GLabel 4500 3550 0    60   Input ~ 0
+Text GLabel 3450 2500 0    60   Input ~ 0
 RGB_BASE
-Wire Wire Line
-	4500 3850 3850 3850
-Wire Wire Line
-	3850 3650 3950 3650
-Wire Wire Line
-	3950 3650 3950 3400
-Wire Wire Line
-	3950 3400 4500 3400
-Wire Wire Line
-	3850 3450 3900 3450
-Wire Wire Line
-	3900 3450 3900 3250
-Wire Wire Line
-	3900 3250 4500 3250
-Text GLabel 4100 2600 2    60   Input ~ 0
+Text GLabel 3050 1550 2    60   Input ~ 0
 IR_PW
-Wire Wire Line
-	4100 2800 4500 2800
-Wire Wire Line
-	4100 3000 4300 3000
-Wire Wire Line
-	4300 3000 4300 2950
-Wire Wire Line
-	4300 2950 4500 2950
-Text GLabel 4500 3100 0    60   Input ~ 0
+Text GLabel 3450 2050 0    60   Input ~ 0
 IR_PW
-Text GLabel 6050 3850 2    60   Input ~ 0
+Text GLabel 5000 2800 2    60   Input ~ 0
 E_DATA
 $Comp
 L Conn_01x02 SERVO_STOP
 U 1 1 5A57BF8E
-P 2350 4050
-F 0 "SERVO_STOP" H 2350 4150 50  0000 C CNN
-F 1 "Conn_01x02" H 2350 3850 50  0001 C CNN
-F 2 "" H 2350 4050 50  0001 C CNN
-F 3 "" H 2350 4050 50  0001 C CNN
-	1    2350 4050
+P 800 3100
+F 0 "SERVO_STOP" H 800 3200 50  0000 C CNN
+F 1 "Conn_01x02" H 800 2900 50  0001 C CNN
+F 2 "" H 800 3100 50  0001 C CNN
+F 3 "" H 800 3100 50  0001 C CNN
+	1    800  3100
 	-1   0    0    1   
 $EndComp
-Text GLabel 2550 3950 2    60   Input ~ 0
+Text GLabel 1000 3000 2    60   Input ~ 0
 SERVO_STOP
-Text GLabel 2550 4050 2    60   Input ~ 0
+Text GLabel 1000 3100 2    60   Input ~ 0
 GND
-Text GLabel 6050 3700 2    60   Input ~ 0
+Text GLabel 5000 2650 2    60   Input ~ 0
 SERVO_STOP
 $Comp
 L Conn_01x02 ROT_ENCODER
 U 1 1 5A57C301
-P 2350 4400
-F 0 "ROT_ENCODER" H 2350 4500 50  0000 C CNN
-F 1 "Conn_01x02" H 2350 4200 50  0001 C CNN
-F 2 "" H 2350 4400 50  0001 C CNN
-F 3 "" H 2350 4400 50  0001 C CNN
-	1    2350 4400
+P 800 3550
+F 0 "ROT_ENCODER" H 800 3650 50  0000 C CNN
+F 1 "Conn_01x02" H 800 3350 50  0001 C CNN
+F 2 "" H 800 3550 50  0001 C CNN
+F 3 "" H 800 3550 50  0001 C CNN
+	1    800  3550
 	-1   0    0    1   
 $EndComp
-Text GLabel 2550 4400 2    60   Input ~ 0
+Text GLabel 1000 3550 2    60   Input ~ 0
 5V
-Text GLabel 2550 4300 2    60   Input ~ 0
+Text GLabel 1000 3450 2    60   Input ~ 0
 ROT_ENCODER
-Text GLabel 6050 3550 2    60   Input ~ 0
+Text GLabel 5000 2500 2    60   Input ~ 0
 ROT_ENCODER
-Text GLabel 6050 2950 2    60   Input ~ 0
+Text GLabel 5000 1900 2    60   Input ~ 0
 P_DATA
-Text GLabel 6050 3400 2    60   Input ~ 0
+Text GLabel 5000 2350 2    60   Input ~ 0
 R_DATA
 $Comp
 L Conn_01x04 LSM303DLHC
 U 1 1 5A57CA85
-P 2350 2250
-F 0 "LSM303DLHC" H 2350 2450 50  0000 C CNN
-F 1 "Conn_01x04" H 2350 1950 50  0001 C CNN
-F 2 "" H 2350 2250 50  0001 C CNN
-F 3 "" H 2350 2250 50  0001 C CNN
-	1    2350 2250
+P 800 900
+F 0 "LSM303DLHC" H 800 1100 50  0000 C CNN
+F 1 "Conn_01x04" H 800 600 50  0001 C CNN
+F 2 "" H 800 900 50  0001 C CNN
+F 3 "" H 800 900 50  0001 C CNN
+	1    800  900 
 	-1   0    0    1   
 $EndComp
-Text GLabel 2550 2050 2    60   Input ~ 0
+Text GLabel 1000 700  2    60   Input ~ 0
 5V
-Text GLabel 2550 2150 2    60   Input ~ 0
+Text GLabel 1000 800  2    60   Input ~ 0
 GND
-Text GLabel 2550 2250 2    60   Input ~ 0
+Text GLabel 1000 900  2    60   Input ~ 0
 SDA
-Text GLabel 2550 2350 2    60   Input ~ 0
+Text GLabel 1000 1000 2    60   Input ~ 0
 SCL
-Text GLabel 5500 4200 3    60   Input ~ 0
+Text GLabel 4450 3150 3    60   Input ~ 0
 SCL
-Text GLabel 5350 4200 3    60   Input ~ 0
+Text GLabel 4300 3150 3    60   Input ~ 0
 SDA
+Wire Wire Line
+	5000 1100 5000 1150
+Wire Wire Line
+	5000 1150 5200 1150
+Wire Wire Line
+	5350 1150 5350 1300
+Wire Wire Line
+	5000 1300 5400 1300
+Connection ~ 5350 1300
+Wire Wire Line
+	3450 2800 2800 2800
+Wire Wire Line
+	2800 2600 2900 2600
+Wire Wire Line
+	2900 2600 2900 2350
+Wire Wire Line
+	2900 2350 3450 2350
+Wire Wire Line
+	2800 2400 2850 2400
+Wire Wire Line
+	2850 2400 2850 2200
+Wire Wire Line
+	2850 2200 3450 2200
+Wire Wire Line
+	3050 1750 3450 1750
+Wire Wire Line
+	3050 1950 3250 1950
+Wire Wire Line
+	3250 1950 3250 1900
+Wire Wire Line
+	3250 1900 3450 1900
+Wire Notes Line
+	500  500  5800 500 
+Wire Notes Line
+	1750 500  1750 3750
+Wire Notes Line
+	1750 1200 500  1200
+Wire Notes Line
+	500  500  500  3750
+Wire Notes Line
+	500  1750 1750 1750
+Wire Notes Line
+	500  2300 1750 2300
+Wire Notes Line
+	500  2850 1750 2850
+Wire Notes Line
+	500  3300 1750 3300
+Wire Notes Line
+	500  3750 5800 3750
+Wire Notes Line
+	5800 3750 5800 500 
+Text Notes 1800 3700 0    60   ~ 0
+ARDUINO
 $EndSCHEMATC
